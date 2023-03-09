@@ -5,7 +5,7 @@ import CheckoutCart from "~/components/CheckoutCart";
 const CartPage = () => {
   return (
     <div>
-      <h1>Panier</h1>
+      <h1 className="my-4 text-2xl font-bold">Panier</h1>
       <CartContent />
       <CartValue />
       <CheckoutCart />

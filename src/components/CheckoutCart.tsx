@@ -27,7 +27,12 @@ const CheckoutCart = () => {
 
   return (
     <div>
-      <button onClick={payCheckout}>Pay</button>
+      <button
+        onClick={payCheckout}
+        className="w-full rounded-md bg-primary p-4 text-2xl text-white"
+      >
+        Pay
+      </button>
     </div>
   );
 };

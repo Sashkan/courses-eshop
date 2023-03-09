@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  text-decoration: none;
+}
+
+.redBackground {
+  background-color: red;
+}

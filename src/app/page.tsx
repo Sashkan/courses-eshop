@@ -1,5 +1,6 @@
 import { type Product } from "@prisma/client";
 import Link from "next/link";
+import ProductList from "~/components/ProductList";
 
 const getProducts = async () => {
   const response = await fetch(
@@ -13,15 +14,8 @@ const HomePage = async () => {
   const products = await getProducts();
 
   return (
-    <div>
-      <h1>My products</h1>
-      <ul>
-        {products.map((product) => (
-          <Link key={product.id} href={`/product/${product.id}`}>
-            <li>{product.name}</li>
-          </Link>
-        ))}
-      </ul>
+    <div className="container m-auto py-2">
+      <ProductList products={products} />
     </div>
   );
 };
